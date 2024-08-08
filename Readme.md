@@ -50,39 +50,39 @@ Instalation
 ``` sudo services mysql stop ```
 
 ## 1). Clone this git repo on your mashine
-- git clone git@github.com:timur-safarov/yii2-restfull-in-docker.git
+* ```git clone git@github.com:timur-safarov/yii2-restfull-in-docker.git```
 
 ## 2). Go to the local repo and Launch this image something like that
-``` cd /var/www/git-repo/ ```
-``` docker-compose up --build -d ```
+* ``` cd /var/www/git-repo/ ```
+* ``` docker-compose up --build -d ```
 
 ## 3). Next thing you need going to do is actually install composer in docker container
-``` docker exec -it PHP-webserver sh ```
-``` composer update ```
+* ``` docker exec -it PHP-webserver sh ```
+* ``` composer update ```
 - Make sure that the folder vendor is appear
-``` ls -la ```
+* ``` ls -la ```
 
 ## 4). Change rights for some folders
 - Leave the docker container
-``` exit ```
-``` sudo chmod -R 777 www/runtime www/web/assets ```
+* ``` exit ```
+* ``` sudo chmod -R 777 www/runtime www/web/assets ```
 
 ## 5). Import the database
 - Go to the PhpMyAdmin
 <a href="http://localhost:8001/" target="_blank">http://localhost:8001/</a>
 - Login: root
 - Password: password
-- Choose the foquz database and Import there db.sql file
+- Choose the <b>foquz</b> database and Import there db.sql file
 
 ## 6). Time's up to check-in on our site <a href="http://localhost:8000/web/" target="_blank">http://localhost:8000/web/</a>
 - Login: a.plotnikov
 - Password: 3goxLF%Yfh5B
 
-# Your website is here - http://localhost:8000/web/
-# Your PhpMyAdmin is here - http://localhost:8001/, http://localhost:8081/index.php?route=/&route=%2F
+### Your website is here - http://localhost:8000/web/
+### Your PhpMyAdmin is here - http://localhost:8001/, http://localhost:8081/index.php?route=/&route=%2F
 
 
-# You can change credentials for database here. Don't forget to fix docker-composer file.
+### You can change credentials for database here(www/config/db.php). Don't forget to fix docker-composer file.
 ```php
 return [
     'class' => 'yii\db\Connection',
@@ -92,15 +92,15 @@ return [
     'charset' => 'utf8',
 ];
 ```
-# The root access to database
+### The root access to database
 - User: root
 - Pass: password
 
-# Access to the database
+### Access to the database
 - host = mysql-db
 - user = db_user
 - pass = password
 - db = foquz
 
-# File the foquz.postman_collection.json you can use as a postman collections and send API requests.
+### File the foquz.postman_collection.json you can use as a postman collections and send API requests.
 
