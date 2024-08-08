@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "32000638-b2ad-41b6-9421-b95e5373e952",
+		"name": "foquz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3344967"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/web/api-patients",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"\",\n    \"birthday\": \"1988-04-11\",\n    \"phone\": \"657658658\",\n    \"address\": \"Ленина, 10\",\n    \"polyclinic_id\": 2,\n    \"treatment_id\": 2,\n    \"status_id\": 3,\n    \"form_disease_id\": 1,\n    \"created\": null,\n    \"created_by\": null,\n    \"updated\": \"2020-05-28 18:43:16\",\n    \"updated_by\": 1,\n    \"diagnosis_date\": null,\n    \"recovery_date\": null,\n    \"analysis_date\": null,\n    \"source_id\": null\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients",
+						"1"
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients?page=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients?fields=id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients?fields=id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id"
+						}
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients?fields=id,phone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients?fields=id,phone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,phone"
+						}
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients?fields=id,phone&page=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients?fields=id,phone&page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,phone"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients?fields=id,name&sort=-name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients?fields=id,name&sort=-name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name"
+						},
+						{
+							"key": "sort",
+							"value": "-name"
+						}
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients?filter[phone][eq]=89995675156",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients?filter[phone][eq]=89995675156",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					],
+					"query": [
+						{
+							"key": "filter[phone][eq]",
+							"value": "89995675156"
+						}
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/web/api-patients?filter[birthday][eq]=1939-09-21",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/web/api-patients?filter[birthday][eq]=1939-09-21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"web",
+						"api-patients"
+					],
+					"query": [
+						{
+							"key": "filter[birthday][eq]",
+							"value": "1939-09-21"
+						}
+					]
+				},
+				"description": "Выбор одного пациента"
+			},
+			"response": []
+		}
+	]
+}
