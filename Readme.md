@@ -65,6 +65,7 @@ Instalation
 ## 4). Change rights for some folders
 - Leave the docker container
 * ``` exit ```
+* ``` sudo mkdir www/runtime www/web/assets ```
 * ``` sudo chmod -R 777 www/runtime www/web/assets ```
 
 ## 5). Import the database
