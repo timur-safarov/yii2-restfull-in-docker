@@ -74,7 +74,7 @@ Instalation
 - Password: password
 - Choose the <b>foquz</b> database and Import there db.sql file
 
-## 6). Time's up to check-in on our site <a href="http://localhost:8000/web/" target="_blank">http://localhost:8000/web/</a>
+## 6). Time's up to check-in on our site <a href="http://localhost:8000/" target="_blank">http://localhost:8000/</a>
 - Login: a.plotnikov
 - Password: 3goxLF%Yfh5B
 
