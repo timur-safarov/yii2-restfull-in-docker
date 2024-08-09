@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8000/web/api-patients",
+			"name": "http://localhost:8000/api-patients",
 			"request": {
 				"auth": {
 					"type": "oauth2",
@@ -32,14 +32,13 @@
 					"raw": "{\n    \"name\": \"\",\n    \"birthday\": \"1988-04-11\",\n    \"phone\": \"657658658\",\n    \"address\": \"Ленина, 10\",\n    \"polyclinic_id\": 2,\n    \"treatment_id\": 2,\n    \"status_id\": 3,\n    \"form_disease_id\": 1,\n    \"created\": null,\n    \"created_by\": null,\n    \"updated\": \"2020-05-28 18:43:16\",\n    \"updated_by\": 1,\n    \"diagnosis_date\": null,\n    \"recovery_date\": null,\n    \"analysis_date\": null,\n    \"source_id\": null\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients",
+					"raw": "http://localhost:8000/api-patients",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					]
 				}
@@ -47,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients/1",
+			"name": "http://localhost:8000/api-patients/1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -75,14 +74,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients/1",
+					"raw": "http://localhost:8000/api-patients/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients",
 						"1"
 					]
@@ -92,7 +90,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients",
+			"name": "http://localhost:8000/api-patients",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -120,14 +118,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients",
+					"raw": "http://localhost:8000/api-patients",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					]
 				},
@@ -136,7 +133,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients?page=2",
+			"name": "http://localhost:8000/api-patients?page=2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -164,14 +161,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients?page=2",
+					"raw": "http://localhost:8000/api-patients?page=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					],
 					"query": [
@@ -186,7 +182,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients?fields=id",
+			"name": "http://localhost:8000/api-patients?fields=id",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -214,14 +210,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients?fields=id",
+					"raw": "http://localhost:8000/api-patients?fields=id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					],
 					"query": [
@@ -236,7 +231,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients?fields=id,phone",
+			"name": "http://localhost:8000/api-patients?fields=id,phone",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -264,14 +259,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients?fields=id,phone",
+					"raw": "http://localhost:8000/api-patients?fields=id,phone",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					],
 					"query": [
@@ -286,7 +280,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients?fields=id,phone&page=2",
+			"name": "http://localhost:8000/api-patients?fields=id,phone&page=2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -314,14 +308,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients?fields=id,phone&page=2",
+					"raw": "http://localhost:8000/api-patients?fields=id,phone&page=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					],
 					"query": [
@@ -340,7 +333,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients?fields=id,name&sort=-name",
+			"name": "http://localhost:8000/api-patients?fields=id,name&sort=-name",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -368,14 +361,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients?fields=id,name&sort=-name",
+					"raw": "http://localhost:8000/api-patients?fields=id,name&sort=-name",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					],
 					"query": [
@@ -394,7 +386,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients?filter[phone][eq]=89995675156",
+			"name": "http://localhost:8000/api-patients?filter[phone][eq]=89995675156",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -422,14 +414,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients?filter[phone][eq]=89995675156",
+					"raw": "http://localhost:8000/api-patients?filter[phone][eq]=89995675156",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					],
 					"query": [
@@ -444,7 +435,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/web/api-patients?filter[birthday][eq]=1939-09-21",
+			"name": "http://localhost:8000/api-patients?filter[birthday][eq]=1939-09-21",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -472,14 +463,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/web/api-patients?filter[birthday][eq]=1939-09-21",
+					"raw": "http://localhost:8000/api-patients?filter[birthday][eq]=1939-09-21",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"web",
 						"api-patients"
 					],
 					"query": [

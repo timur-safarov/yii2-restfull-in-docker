@@ -19,7 +19,8 @@ $config = [
 
                 $response = $event->sender;
 
-                if ($response->data !== null) {
+                // Применяем данные блок только для нашего API
+                if ($response->data !== null && Yii::$app->controller == 'api-patient') {
 
                     $response->data = [
                         'success' => $response->isSuccessful,
@@ -29,6 +30,7 @@ $config = [
 
                     // Статус по умолчанию
                     $response->statusCode = 200;
+
                 }
             },
         ],
@@ -38,7 +40,8 @@ $config = [
             'cookieValidationKey' => 'k3wUEV83VnszvjN9HbR-LeCXWzmnNV6n',
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
-            ]
+            ],
+            'baseUrl' => ''
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',

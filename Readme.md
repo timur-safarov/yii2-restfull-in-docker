@@ -46,8 +46,8 @@ Instalation
 ------------
 
 ## 0). Must turn off apache, mysql services on your local machine either you won't launch the project.
-``` sudo services apache2 stop ```
-``` sudo services mysql stop ```
+* ``` sudo services apache2 stop ```
+* ``` sudo services mysql stop ```
 
 ## 1). Clone this git repo on your mashine
 * ```git clone git@github.com:timur-safarov/yii2-restfull-in-docker.git```
@@ -78,8 +78,8 @@ Instalation
 - Login: a.plotnikov
 - Password: 3goxLF%Yfh5B
 
-### Your website is here - http://localhost:8000/web/
-### Your PhpMyAdmin is here - http://localhost:8001/, http://localhost:8081/index.php?route=/&route=%2F
+### Your website is here - http://localhost:8000/
+### Your PhpMyAdmin is here - http://localhost:8081/index.php?route=/&route=%2F
 
 
 ### You can change credentials for database here(www/config/db.php). Don't forget to fix docker-composer file.
